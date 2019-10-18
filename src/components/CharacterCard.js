@@ -9,7 +9,7 @@ const Card = styled.div`
 background-color: lightblue;
 color: black;
 width: 350px;
-max-height: 800px;
+max-height: 600px;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
@@ -20,7 +20,6 @@ border-radius: 10px;
 
 export default function CharacterCard(props) {
   
-
 
   return (
     

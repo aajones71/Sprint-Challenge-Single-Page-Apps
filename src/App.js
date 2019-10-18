@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { Route } from "react-router-dom"
+import { Route, Link } from "react-router-dom"
 import Header from "./components/Header.js";
 import WelcomePage from "./components/WelcomePage.js"
 import CharacterList from "./components/CharacterList.js"
@@ -16,12 +16,15 @@ export default function App() {
     <main>
       
       <Header />
-      <CharacterList char={char}/>
-      <CharacterCard />
+      
+      {/* <CharacterList char={char}/>
+      <CharacterCard /> */}
+      
       {/* <SearchForm addNewCharProps={addNewChar}/> */}
-      <Route path="/" component={WelcomePage} />
-      <Route path="/character-list" component={CharacterList} />
+      {/* <Route path="/" component={WelcomePage} /> */}
+      {/* <Route path="/character-list" component={CharacterList} /> */}
       
     </main>
+    
   );
 }

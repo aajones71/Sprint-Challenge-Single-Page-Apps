@@ -37,7 +37,13 @@ export default function CharacterList(props) {
      <Container className="character-list">
        <Row>
       {/* <h2>TODO: `char.map()` over your state here!</h2> */}
-    
+      <SearchForm
+        placeholder='search characters'
+        value={search}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+      />
+      <h5>delete character name to return back to list</h5>
         {char.map((person, index) => {
 
           return(
@@ -54,12 +60,7 @@ export default function CharacterList(props) {
             </div>
           )
         })}
-                <SearchForm
-        placeholder='search characters'
-        value={search}
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-      />
+     
 
     </Row>
   </Container>  
